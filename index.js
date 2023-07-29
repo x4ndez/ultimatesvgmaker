@@ -52,10 +52,15 @@ function prompt() {
 
 }
 
+
+
 async function initProcess() {
 
     const promptVal = await prompt();
-    console.log(promptVal.textValue);
+    console.log("Data Received!");
+    console.log(promptVal); //REMOVE LATER
+
+    processPrompt(promptVal);
 
 }
 

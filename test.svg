@@ -1,3 +1,8 @@
+<!-- Shape >> fill, textVal, textColor
+Triangle >> points="250 50, 450 450, 50 450, 250 50"
+Rectangle >>width, height, x, y
+Circle >> r, cx, cy -->
+
 <svg width="500" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
   <!-- <rect x="0" y="0" width="500" height="500" fill="blue" /> -->
