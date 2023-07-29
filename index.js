@@ -87,12 +87,10 @@ async function initProcess() {
     const shape = processPrompt(promptVal);
     console.log("Shape created!");
 
+    // Render an SVG
     shape.render(svgTemplate);
 
-    // Insert object data into SVG string
-
-
-    // Output an SVG file
+    // Output SVG into an SVG file
 
 
 }
