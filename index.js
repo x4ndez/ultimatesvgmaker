@@ -14,8 +14,8 @@ function prompt() {
 
                     await this;
 
-                    if (input.length <= 3) return true;
-                    else throw new Error("Please make your response up to 3 characters.");
+                    if (input.length <= 3 && input.length > 0) return true;
+                    else throw new Error("Please make your text up to 3 characters.");
 
                 },
             },
@@ -55,7 +55,7 @@ function prompt() {
 async function initProcess() {
 
     const promptVal = await prompt();
-    console.log(promptVal);
+    console.log(promptVal.textValue);
 
 }
 
