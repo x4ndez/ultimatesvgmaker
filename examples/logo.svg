@@ -2,17 +2,17 @@
 
     <svg width="500" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
-    <circle cx="250" cy="250" r="200" fill="green" />
+    <circle cx="250" cy="250" r="200" fill="red" />
 
         <text
             x="250" y="250"
             font-size="100"
-            fill="pruple"
+            fill="black"
             font-family="calibri"
             text-anchor="middle"
             dominant-baseline="middle">
 
-            313
+            XXX
 
         </text>
 

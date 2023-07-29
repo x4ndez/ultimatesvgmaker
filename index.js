@@ -35,7 +35,7 @@ function prompt() {
                 choices: [
 
                     "Circle",
-                    "Square",
+                    "Rectangle",
                     "Triangle"
 
                 ],
@@ -92,9 +92,7 @@ async function initProcess() {
     const shapeRender = shape.render(svgTemplate);
 
     // Output SVG into an SVG file
-    fs.writeFile("./examples/logo.svg", shapeRender);
-
-
+    await fs.writeFile("./examples/logo.svg", shapeRender);
 
 }
 
