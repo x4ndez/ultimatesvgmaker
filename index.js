@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const shapes = require("./lib/shapes.js");
+const svgTemplate = require("./lib/svg.template.js");
 
 function prompt() {
 
@@ -78,12 +79,21 @@ function processPrompt(promptVal) {
 
 async function initProcess() {
 
+    // Prompt user input
     const promptVal = await prompt();
     console.log("Data Received!");
-    console.log(promptVal); //REMOVE LATER
 
+    // Process the input, return an object depending on the shape the user selected.
     const shape = processPrompt(promptVal);
-    console.log(shape);
+    console.log("Shape created!");
+
+    shape.render(svgTemplate);
+
+    // Insert object data into SVG string
+
+
+    // Output an SVG file
+
 
 }
 
