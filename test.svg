@@ -1,0 +1,29 @@
+
+
+<svg width="500" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- <rect x="0" y="0" width="500" height="500" fill="blue" /> -->
+
+<!-- Triangle -->
+    <polyline points="250 50, 450 450, 50 450, 250 50" fill="green" />
+
+<!-- Rectangle -->
+    <!-- <rect x="50" y="50" width="400" height="400" fill="black" /> -->
+
+<!-- Circle -->
+    <!-- <circle cx="250" cy="250" r="200" stroke="red" fill="green" stroke-width="5"/> -->
+
+<!-- Text -->
+    <text id="lol"
+    x="250" y="300"
+    font-size="100"
+    fill="black"
+    font-family="calibri"
+    text-anchor="middle"
+    dominant-baseline="middle">
+
+    xTech
+
+    </text>
+    
+</svg>
