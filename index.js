@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const shapes = require("./lib/shapes.js");
 const svgTemplate = require("./lib/svg.template.js");
+const fs = require("fs/promises");
 
 function prompt() {
 
@@ -88,9 +89,11 @@ async function initProcess() {
     console.log("Shape created!");
 
     // Render an SVG
-    shape.render(svgTemplate);
+    const shapeRender = shape.render(svgTemplate);
 
     // Output SVG into an SVG file
+    fs.writeFile("./examples/logo.svg", shapeRender);
+
 
 
 }
