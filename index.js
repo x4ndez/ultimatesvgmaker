@@ -9,7 +9,7 @@ function prompt() {
                 type: "input",
                 message: "Please type in text up to 3 characters that will be displayed in the SVG...",
                 name: "textValue",
-                // Throw an error if input is above 3 characters.
+                // Throw an error if input is not between 1-3 characters.
                 validate: async (input) => {
 
                     await this;
