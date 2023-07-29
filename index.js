@@ -1,4 +1,5 @@
 const inquirer = require("inquirer");
+const shapes = require("./lib/shapes.js");
 
 function prompt() {
 
@@ -52,7 +53,28 @@ function prompt() {
 
 }
 
+function processPrompt(promptVal) {
 
+    let objectType;
+    const { textValue, textColor, shapeType, shapeColor } = promptVal;
+
+    if (shapeType === "Triangle") {
+
+        objectType = new shapes.Triangle(textValue, textColor, shapeColor);
+
+    } else if (shapeType === "Square") {
+
+        objectType = new shapes.Rectangle(textValue, textColor, shapeColor);
+
+    } else if (shapeType === "Circle") {
+
+        objectType = new shapes.Circle(textValue, textColor, shapeColor);
+
+    }
+
+    return objectType;
+
+}
 
 async function initProcess() {
 
@@ -60,7 +82,8 @@ async function initProcess() {
     console.log("Data Received!");
     console.log(promptVal); //REMOVE LATER
 
-    processPrompt(promptVal);
+    const shape = processPrompt(promptVal);
+    console.log(shape);
 
 }
 
