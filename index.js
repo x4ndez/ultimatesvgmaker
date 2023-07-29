@@ -87,10 +87,13 @@ async function initProcess() {
     const shape = processPrompt(promptVal);
 
     // Render an SVG
-    const shapeRender = shape.render(svgTemplate);
+    const shapeRender = shape.render();
+
+    // Return processed svg code
+    const svgContent = svgTemplate.templateProcessed(shape, shapeRender);
 
     // Output SVG into an SVG file
-    await fs.writeFile("./examples/logo.svg", shapeRender);
+    await fs.writeFile("./examples/logo.svg", svgContent);
     console.log("Generated logo.svg");
 
 }
