@@ -64,7 +64,7 @@ function processPrompt(promptVal) {
 
         objectType = new shapes.Triangle(textValue, textColor, shapeColor);
 
-    } else if (shapeType === "Square") {
+    } else if (shapeType === "Rectangle") {
 
         objectType = new shapes.Rectangle(textValue, textColor, shapeColor);
 
