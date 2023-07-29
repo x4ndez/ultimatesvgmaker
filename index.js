@@ -82,17 +82,16 @@ async function initProcess() {
 
     // Prompt user input
     const promptVal = await prompt();
-    console.log("Data Received!");
 
     // Process the input, return an object depending on the shape the user selected.
     const shape = processPrompt(promptVal);
-    console.log("Shape created!");
 
     // Render an SVG
     const shapeRender = shape.render(svgTemplate);
 
     // Output SVG into an SVG file
     await fs.writeFile("./examples/logo.svg", shapeRender);
+    console.log("Generated logo.svg");
 
 }
 
