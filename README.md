@@ -4,7 +4,7 @@
 ![Logo example](./examples/logo.svg)
 
 ## Description
-This application is the week 10 project of the edX/Monash bootcamp with a focus on Object-Orientated Programming and testing.  The task was to build an SVG based off user input from the terminal using the Inquirer module.  I personally liked this method of coding, as it kept everything organised and reusable.  
+This application is the week 10 project of the edX/Monash bootcamp with a focus on Object-Orientated Programming and testing.  The task was to build an SVG based off user input from the terminal using the Inquirer module.  I personally liked this method of coding, as it kept everything organised and reusable.  As for testing the application, I used the jest module.  During the week when we were learning to use jest, I was fairly confused for why we were using it, but after I took some time to read over it and understand the syntax, it all made sense and I was able to feature it into my application without any troubles!
 
 The acceptance criteria of this project were as follows:
 
