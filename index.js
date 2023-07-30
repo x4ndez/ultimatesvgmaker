@@ -80,21 +80,31 @@ function processPrompt(promptVal) {
 
 async function initProcess() {
 
-    // Prompt user input
-    const promptVal = await prompt();
+    try {
 
-    // Process the input, return an object depending on the shape the user selected.
-    const shape = processPrompt(promptVal);
+        // Prompt user input
+        const promptVal = await prompt();
 
-    // Render an SVG
-    const shapeRender = shape.render();
+        // Process the input, return an object depending on the shape the user selected.
+        const shape = processPrompt(promptVal);
 
-    // Return processed svg code
-    const svgContent = svgTemplate.templateProcessed(shape, shapeRender);
+        // Render an SVG
+        const shapeRender = shape.render();
 
-    // Output SVG into an SVG file
-    await fs.writeFile("./examples/logo.svg", svgContent);
-    console.log("Generated logo.svg");
+        // Return processed svg code
+        const svgContent = svgTemplate.templateProcessed(shape, shapeRender);
+
+        // Output SVG into an SVG file
+        await fs.writeFile("./examples/logo.svg", svgContent);
+        console.log("Generated logo.svg");
+
+    }
+
+    catch (err) {
+
+        throw new Error("Something went wrong!" + err);
+
+    }
 
 }
 
