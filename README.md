@@ -38,8 +38,8 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 To use this application you will need [node.js](https://nodejs.org/en) installed.
 
 ## Application Walkthrough
-Please click [here]() to see the video walkthrough of the Ultimate SVG Maker.<br>
-If you are unable to view the link, it can be downloaded from Google Drive at the same link.
+Please click [here](https://drive.google.com/file/d/1zfx3PuNKo-mOhN-Qa9ERnCQJO8xHrYYn/view) to see the video walkthrough of the Ultimate SVG Maker.<br>
+If you are unable to view the link, it can be downloaded from Google Drive at the same link, or is available for download at './assets/ultimatesvgmaker-walkthrough.webm' of this repository.
 
 ## Usage
 1. Execute 'node index.js' in the './ultimatesvgmaker/' directory.
